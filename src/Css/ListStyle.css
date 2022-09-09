@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+
+
+
+
+
+header{
+background-color: var(--maincolor);
+
+/* .container-flex{
+    width: 95px;
+    margin:0 auto;
+    max-width: 1200px;
+} */
+}
+
+
+.container{
+    float: right;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listItem{
+   
+    margin-right: 2em;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    font-size: 16px;
+    padding-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.activeItem{
+    
+    color: rgb(105, 105, 105);
+    border-bottom : .1em double  rgb(105, 105, 105);
+    border-bottom: center;
+}
+
+@media screen and (max-width: 1100px){
+
+
+}
+
+@media screen and (max-width: 768px){
+
+    html{
+        font-size: 13px;
+        
+    }
+
+    .container-flex{
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: 568px){
+
+    html{
+        font-size: 11px;
+        
+    }
+
+    .container-flex{
+        flex-direction: column;
+    }
+
+
+}
+   
+
+   
+    
+
+
+
+

@@ -1,0 +1,7 @@
+
+:root{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to right top, #474b5a, #404453, #383d4c, #313746, #2a303f, #252b38, #202532, #1b202b, #171b23, #12151b, #0c0e13, #040507);
+}
