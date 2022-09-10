@@ -15,7 +15,7 @@
     position:absolute;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    color: rgb(252, 252, 252);
+    color: #292929;
     width: 100%;
     margin: 0 auto;
     padding: 0 10rem;
@@ -26,22 +26,21 @@
 .mainAbout h2{
     text-align: center;
     font-weight: 600;
-    font-size: 4vw;
+    font-size: 2vw;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .mainAbout img{
-  
     max-width: 250px;
     height: auto;
     margin-bottom: 1rem;
 }
 
 .mainAbout p{
-    font-size: 150%;
-    color: white;
-    font-weight: 600;
+    font-size: 3vh;
+    color: #160300;
+    font-weight: 400;
     line-height: 27px;
     margin-bottom: 5rem;
     text-align: justify;
@@ -58,7 +57,7 @@
 .mainAbout  button{
     display: inline-block;
     padding: 2.rem 7.5rem;
-    background: white;
+    background: #160300;
     text-decoration: none;
     color: #ffffff;
     border-radius: 10px;
@@ -66,9 +65,7 @@
 }
 
 .lineSP{
-
-
-    background-color: white;
+    background-color: #160300;
     height: 0.2rem;
     content: "";
     border-radius: 40px;
@@ -77,13 +74,12 @@
 }
 
 .mainAbout button{
-
     font-size: 2.9vh;
     font-weight: 600;
     border-color: #148ebb00;
     width: 190px;
     height: 60px;
-    background-color: #148EBB;
+    background-color: #db5e4b;
     margin-bottom: 2rem;
 
 }
@@ -94,27 +90,21 @@ button:hover{
     background: #466f7e;
 }
 
-.fon{
-    padding: 10px;
-}
 .fon a:link{
     margin-bottom: 20rem;
     text-decoration: none;
 }
 
 .mainAbout a:link:hover{
-
-    color:#c8e0f4;
-
+    color:#4e4e4e;
 }
 .mainAbout a:link{
-    font-size: 4vw;
-    color:white;
+    font-size: 2vw;
+    color:#000000;
 }
 
 .botto p{
-
-    font-size: 10erm;
+    font-size: 5erm;
     font-weight: 600;
      margin-top: 20px;
     text-align: center;

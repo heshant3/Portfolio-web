@@ -3,9 +3,6 @@
 
 
 
-
-
-
 header{
 background-color: var(--maincolor);
 
@@ -28,7 +25,7 @@ background-color: var(--maincolor);
 .listItem{
    
     margin-right: 2em;
-    color: rgb(255, 255, 255);
+    color: #160300;
     text-decoration:none;
     font-size: 16px;
     padding-top: 20px;

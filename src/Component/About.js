@@ -1,6 +1,7 @@
 import React , {useEffect} from "react";
 import '../Css/AboutStyle.css';
 import Img from '../Image/img.png'
+import { IconContext } from "react-icons";
 import { FaBehanceSquare , FaGithub,  FaLinkedin} from 'react-icons/fa';
 import { gsap } from 'gsap';
 
@@ -22,9 +23,7 @@ export default function About(){
 
 
             <div className="img">
-
             <img src={Img} alt="my face image"/>
-
             </div>
             <h2>Hello there , <br/> i'm Heshan Tharindu</h2>
             <div className="lineSP"></div>
@@ -39,9 +38,11 @@ export default function About(){
 
 
             <div className="fon">
-            <a href="https://github.com/heshant3" > < FaGithub color="white" /> </a>
-            <a href="https://www.behance.net/heshantharindu" > <FaBehanceSquare color="white" /> </a>
-            <a href="https://www.linkedin.com/in/heshant3/" > <FaLinkedin color="white"/> </a>
+            <IconContext.Provider value={{ className: "global-class-name" }}>
+            <a href="https://github.com/heshant3" > < FaGithub /> </a>
+            <a href="https://www.behance.net/heshantharindu" > <FaBehanceSquare  /> </a>
+            <a href="https://www.linkedin.com/in/heshant3/" > <FaLinkedin /> </a>
+            </IconContext.Provider>
            </div>
 
 
