@@ -3,19 +3,19 @@ import { NavLink } from "react-router-dom";
 import '../Css/ListStyle.css';
 
 
-const List=()=>{
+export default function List(){
     return(
         <>
        <header>
-        <div className="container container-flex ">
+        <div className="toop">
             
         <nav>
             <div className="list">
+                
                 <NavLink exact to="/" className="listItem" activeClassName="activeItem">Home </NavLink>
                 <NavLink to="/works" className="listItem" activeClassName="activeItem">Works </NavLink>
                 <NavLink to="/about" className="listItem" activeClassName="activeItem">About </NavLink>
-
-
+                
             </div>
         </nav>
 
@@ -25,4 +25,3 @@ const List=()=>{
     )
 }
 
-export default List;

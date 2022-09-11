@@ -12,7 +12,7 @@ import Img9 from '../Image/works-9.png'
 import Img10 from '../Image/works-10.png'
 import Img11 from '../Image/works-11.png'
 import { IconContext } from "react-icons";
-import { FaBehanceSquare , FaGithub} from 'react-icons/fa';
+import { FaBehanceSquare , FaGithub,  FaLinkedin} from 'react-icons/fa';
 
 export default function App() {
     return(
@@ -29,7 +29,7 @@ export default function App() {
         <h1>Smart AI Stethoscope Project</h1>
 
         <p>Develop of wireless stethoscope with mobile AI assistant application.</p>
-        <h5>Technologies - Android, TensorFlow, Python</h5>
+        <h5>Technologies - Android, TensorFlow, Python, Arduino</h5>
         </div>
 
         <div className="item noisy"> 
@@ -37,7 +37,7 @@ export default function App() {
         <h1>MC Management System</h1>
 
         <p>Develop of java application to manage medical center.</p>
-        <h5>Technologies - Java, Java FX, MySQL</h5>
+        <h5>Technologies - Java, MySQL</h5>
         </div>
 
         <div className="item noisy"> 
@@ -69,7 +69,7 @@ export default function App() {
         <h1>Mini Bank Management System</h1>
 
         <p>Develop of Mini bank management system.</p>
-        <h5>Technologies - Arduino, Android Studio, MySQL</h5>
+        <h5>Technologies - Arduino, Android, MySQL</h5>
         </div>
 
         <div className="item noisy"> 
@@ -85,7 +85,7 @@ export default function App() {
         <h1>Smart Plug (IOT Base)</h1>
 
         <p>Develop of IOT Smart Plug.</p>
-        <h5>Technologies - Arduino, Android Studio, MySQL</h5>
+        <h5>Technologies - Arduino, Android, MySQL</h5>
         </div>
 
         <div className="item noisy"> 
@@ -93,7 +93,7 @@ export default function App() {
         <h1>Water Quality Analyzer</h1>
 
         <p>Develop of water quality analyzer unit.</p>
-        <h5>Technologies - Arduino, Android Studio, MySQL</h5>
+        <h5>Technologies - Arduino, Android, MySQL</h5>
         </div>
 
         <div className="item noisy"> 

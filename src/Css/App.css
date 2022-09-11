@@ -1,6 +1,6 @@
 
 :root{
-
-    background-image: radial-gradient(circle, #fff1f7, #ffecf4, #ffe8f1, #ffe3ed, #ffdeea);
+    background-color: #ECEADD;
+    /* background-image: radial-gradient(circle, #fff1f7, #ffecf4, #ffe8f1, #ffe3ed, #ffdeea); */
     /* background-image: radial-gradient(circle, #fff0f0, #fef0f0, #fdf0f0, #fcefef, #fbefef, #fbeeee, #fbeded, #fbecec, #fceaea, #fde8e8, #fee5e5, #ffe3e3); */
 }
