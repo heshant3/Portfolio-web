@@ -19,7 +19,7 @@
     color: #292929;
     width: 100%;
     margin: 0 auto;
-    padding: 0 4rem;
+    padding: 0 5rem;
     font-weight: 600;
     text-align: center;
 }
@@ -295,5 +295,25 @@ button:hover{
     text-align: center;
 }
 
+@media screen and (max-width: 576px){
 
+    .mainAbout{
+        padding: 0 2rem;
+    }
+
+    .mainAbout p{
+        font-size: 1rem;
+    }
+
+    .exp h3{
+        font-size: 1rem;
+       
+        
+    }
+    
+    .exp span{
+    
+        font-size: 1rem;
+    }
+}
 

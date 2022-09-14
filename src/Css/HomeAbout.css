@@ -1,476 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;600&display=swap');
 
 
-.box{
-    position: absolute;
-    display: flex;
-    top:-2.5vw;
-    width: 55vw;
-    height: 29vw;
-    
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
 
-.nameText1{
+.bodybox{
+    padding-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
     width: 100%;
-    height: 20px;
-    position: relative;
-    display: flex;
-    top:260px;
-    font-size: 12vw;
+    display :flex;
+    justify-content :center;
+    align-items :center;
+    gap: 10px 0px;
+}
+
+
+.iteambox{
+    letter-spacing: 0.2rem;
+    height: 340px;
+    width: 600px;
+    /* background-color: #b1835e0a; */
+    text-align: left;
+    display :inherit;
+    justify-content :inherit;
+    align-items: inherit;
+    text-align: left;
+}
+.iteambox h1{
+    font-size: 4.7rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.iteambox span{
+    color: #B1845E;
+    font-family: 'Yanone Kaffeesatz' , sans-serif;
+}
+
+.iteambox spam{
+    font-size: 4.7rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #000000;
+}
+
+
+
+.iteambox p{
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0rem;
+}
+
+
+@media screen and (max-width: 576px){
+
+.bodybox{
+    padding: 50px 15px;
+}   
+
+.iteambox{
+
+    height: 300px;
     text-align: center;
-    color: #160300;
-
- 
+}
+.iteambox h1{
+    font-size: 3rem;
 }
 
-.text1{
-
-    position: inherit;
-    display: flex;
-    left: 5.5%;
-    height: 20px;
-   
-
+.iteambox spam{
+    font-size: 3rem;
 }
 
-.text2{
-    right: 5.8%;
-    position:inherit;
-    display: flex;
-    top: 10vw;
-    
-
+.iteambox p{
+    font-size: 1rem;
+    text-align: center;
 }
 
-.text3{
-
-    position: absolute;
-    display: flex;
-    font-size: 1vw;
-    font-family: 'Inter', sans-serif;
-    margin-top: 370px;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    height: 20px;
-
 }
-
-.lottie  {  
-    display: flex;
-    width: 23vw;
-    height: 23vw;
-
-    position: absolute;
-    right: 10.3vw;
-    bottom: 30%;
-    
-
-}
-/* For Mobile Portrait View */
-@media   (max-device-width: 480px)   {
-    .box{
-        position: relative;
-        display: flex;
-        top: 10%;   
-        width: 100%;
-        height: 70vw;
-    }
-
-    .lottie  {  
-
-        display: flex;
-        width: 40vw;
-        height: 40vw;
-        position: inherit;
-        margin: 0 auto;
-        margin-top: -70px;
-    }
-
-    .text1{
-        display: flex;
-        left: 50%;
-        transform: translate(-50% , -50%);       
-    }
-    .text2{
-        display: flex;
-        top:25px;
-        right: 48%;
-        transform: translate(50% , 50%);    
-    }
-
-    .nameText1{
-        top: 120px;
-    }
-
-    .text3{
-        position: absolute;
-        display: flex;
-        font-size: 1.1vh;
-        margin-top: 25%;
-    }
-  }
-
-/* For Mobile Landscape View */
-@media  (min-device-width: 481px) and (max-device-width: 640px){
-   
-    .box{
-        position: relative;
-        display: flex;
-        top: 10%;   
-        width: 100%;
-        height: 40vw;
-    }
-
-    .lottie  {  
-
-        display: flex;
-        width: 30vw;
-        height: 30vw;
-        position: inherit;
-        margin: 0 auto;
-        margin-top: -70px;
-    }
-
-    .text1{
-        display: flex;
-        left: 50%;
-        transform: translate(-50% , -50%);       
-    }
-    .text2{
-        display: flex;
-        top:220%;
-        right: 48%;
-        transform: translate(50% , 50%);    
-    }
-
-    .nameText1{
-        top: 120px;
-    }
-
-    .text3{
-        position: absolute;
-        display: flex;
-        font-size: 1.6vh;
-        margin-top: 25%;
-    }
-
-  }
-
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media  (min-device-width: 641px) and (max-device-width: 768px){
-
-    .box{
-        position: absolute;
-        display: flex;
-        top:4.5vw;
-        width: 60vw;
-        height: 40vw;
-        }
-    
-    .nameText1{
-
-        top:270px;
-    }
-    
-    .text1{
-    
-        position: inherit;
-        display: flex;
-        left: 5.5%;
-        height: 20px;
-    }
-    
-    .text2{
-        right: 5.8%;
-        position:inherit;
-        display: flex;
-        top: 10vw;
-    }
-    
-    .text3{
-    
-        position: absolute;
-        display: flex;
-        font-size: 2vw;
-        margin-top: 24%;
-        left: 50%;
-        transform: translate(-50% , -50%);
-        height: 20px;
-    }
-    
-    .lottie  {  
-        display: flex;
-        width: 25vw;
-        height: 25vw;
-        position: absolute;
-        right: 10.3vw;
-        bottom: 260px;
-    }
-    
-
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media  (min-device-width: 769px) and (max-device-width: 992px){
-
-    .box{
-        position: absolute;
-        display: flex;
-        top:-1%;
-        width: 60vw;
-        height: 40vw;
-        }
-    
-    .nameText1{
-
-        top:270px;
-    }
-    
-    .text1{
-    
-        position: inherit;
-        display: flex;
-        left: 5.5%;
-        height: 20px;
-    }
-    
-    .text2{
-        right: 5.8%;
-        position:inherit;
-        display: flex;
-        top: 10vw;
-    }
-    
-    .text3{
-    
-        position: absolute;
-        display: flex;
-        font-size: 2vw;
-        margin-top: 24%;
-        left: 50%;
-        transform: translate(-50% , -50%);
-        height: 20px;
-    }
-    
-    .lottie  {  
-        display: flex;
-        width: 25vw;
-        height: 25vw;
-        position: absolute;
-        right: 10.3vw;
-        bottom: 35%;
-    }
-    
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media  (min-device-width: 993px) and (max-device-width: 1024px){
-
-    .box{
-        position: absolute;
-        display: flex;
-        top:-1%;
-        width: 60vw;
-        height: 40vw;
-        }
-    
-    .nameText1{
-
-        top:270px;
-    }
-    
-    .text1{
-    
-        position: inherit;
-        display: flex;
-        left: 5.5%;
-        height: 20px;
-    }
-    
-    .text2{
-        right: 5.8%;
-        position:inherit;
-        display: flex;
-        top: 10vw;
-    }
-    
-    .text3{
-    
-        position: absolute;
-        display: flex;
-        font-size: 2vw;
-        margin-top: 24%;
-        left: 50%;
-        transform: translate(-50% , -50%);
-        height: 20px;
-    }
-    
-    .lottie  {  
-        display: flex;
-        width: 25vw;
-        height: 25vw;
-        position: absolute;
-        right: 10.3vw;
-        bottom: 35%;
-    }
-    
-
-}
-
-
-/* Extra large devices (large laptops and desktops, 1280px and up) */
-@media  (min-device-width: 1025px) and (max-device-width: 1280px){
-
-    .box{
-        position: absolute;
-        display: flex;
-        top:-1%;
-        width: 60vw;
-        height: 40vw;
-        }
-    
-    .nameText1{
-
-        top:370px;
-    }
-    
-    .text1{
-    
-        position: inherit;
-        display: flex;
-        left: 5.5%;
-        height: 20px;
-    }
-    
-    .text2{
-        right: 5.8%;
-        position:inherit;
-        display: flex;
-        top: 10vw;
-    }
-    
-    .text3{
-    
-        position: absolute;
-        display: flex;
-        font-size: 2vw;
-        margin-top: 24%;
-        left: 50%;
-        transform: translate(-50% , -50%);
-        height: 20px;
-    }
-    
-    .lottie  {  
-        display: flex;
-        width: 25vw;
-        height: 25vw;
-        position: absolute;
-        right: 10.3vw;
-        bottom: 27%;
-    }
-    
-}
-
-
-
-/* For Mobile Landscape View */
-@media   (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
-   
-    .box{
-        position: relative;
-        display: flex;
-        top: 10%;   
-        width: 100%;
-        height: 70vw;
-    }
-
-    .lottie  {  
-
-        display: flex;
-        width: 30vw;
-        height: 30vw;
-        position: inherit;
-        margin: 0 auto;
-        margin-top: -70px;
-    }
-
-    .text1{
-        display: flex;
-        left: 50%;
-        transform: translate(-50% , -50%);       
-    }
-    .text2{
-        display: flex;
-        top:70px;
-        right: 48%;
-        transform: translate(50% , 50%);    
-    }
-
-    .nameText1{
-        top: 170px;
-    }
-
-    .text3{
-        position: absolute;
-        display: flex;
-        font-size: 1.1vh;
-        margin-top: 25%;
-    }
-
-  }
-
-  /* For Mobile Landscape View */
-@media   (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-   
-    .box{
-        position: relative;
-        display: flex;
-        top: 10%;   
-        width: 100%;
-        height: 70vw;
-    }
-
-    .lottie  {  
-
-        display: flex;
-        width: 30vw;
-        height: 30vw;
-        position: inherit;
-        margin: 0 auto;
-        margin-top: -70px;
-    }
-
-    .text1{
-        display: flex;
-        left: 50%;
-        transform: translate(-50% , -50%);       
-    }
-    .text2{
-        display: flex;
-        top:70px;
-        right: 48%;
-        transform: translate(50% , 50%);    
-    }
-
-    .nameText1{
-        top: 170px;
-    }
-
-    .text3{
-        position: absolute;
-        display: flex;
-        font-size: 1.1vh;
-        margin-top: 25%;
-    }
-
-  }
-
-

@@ -23,6 +23,12 @@ export default function About(){
 
       }, [])
 
+
+      const handleClick = () =>{
+          navigator.vibrate([100]);
+        
+      }
+
     return(
         <div className="mainAbout"> 
 
@@ -30,7 +36,7 @@ export default function About(){
             <div className="img">
             <img src={Img} alt="my face image"/>
             </div>
-            <h2>Hello there , <br/> i'm Heshan Tharindu</h2>
+            <h2>Hello there , <br/> I'm Heshan Tharindu</h2>
             <div className="lineSP"></div>
             <p>I am undergraduate from Information and Communication Technology in Rajarata University of Sri Lanka.i have over 3 Years of experience in UI Engineering. <br/>  <br/> 
             I am interested in Ui\Ux developer. Learning new things in information technology is my main goal and I achieve it with hard work.</p>
@@ -116,15 +122,14 @@ export default function About(){
             <div className="bot">
 
             <a href="Heshan-CV.pdf" download="Heshan-CV.pdf">
-            <button>Download CV</button>
+            <button onClick={handleClick} >Download CV</button>
             </a>
-
-
+             
             <div className="fon">
             <IconContext.Provider value={{ className: "global-class-name" }}>
-            <a href="https://github.com/heshant3" > < FaGithub /> </a>
-            <a href="https://www.behance.net/heshantharindu" > <FaBehanceSquare  /> </a>
-            <a href="https://www.linkedin.com/in/heshant3/" > <FaLinkedin /> </a>
+            <a onClick={handleClick} href="https://github.com/heshant3" > < FaGithub /> </a>
+            <a onClick={handleClick} href="https://www.behance.net/heshantharindu" > <FaBehanceSquare  /> </a>
+            <a onClick={handleClick} href="https://www.linkedin.com/in/heshant3/" > <FaLinkedin /> </a>
             </IconContext.Provider>
            </div>
 
