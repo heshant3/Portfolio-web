@@ -1,10 +1,10 @@
 //import React from "react";
-import React , {Suspense} from "react";
+import React , {Suspense , useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import '../Css/HomeAbout.css';
 import Lottie from "react-lottie";
 import animationData from "../lotties/parachute-2";
-import { gsap} from 'gsap';
+import { gsap , Power3} from 'gsap';
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera,ContactShadows } from "@react-three/drei";
 import Kick from "../Plane.js";
@@ -14,7 +14,6 @@ import Img from '../Image/img.png'
 
 
   export default function Home(){
-
 
   
     const defaultOptions = {
@@ -26,13 +25,15 @@ import Img from '../Image/img.png'
         },
       };
 
-    //   useEffect(() => {
-    //     // gsap.to('.contentBox', { duration: 2.5, ease: "slow(0.7, 0.7, false)", y: 190 });
+      useEffect(() => {
 
-    //     gsap.to('.contentBox p', { opacity:1, duration: 2.5, ease: "power4.out", y: 30 }, );
+ 
+        gsap.from('.mainbody', { y:15, opacity:0, ease: Power3.easeOut, delay:0.8 });
+
+        // gsap.to('.iteambox h1', { opacity:1, duration: 2.5, ease: "power4.out", y: 30 }, );
         
 
-    //   }, [])
+      }, [])
 
 
     

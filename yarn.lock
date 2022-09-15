@@ -5242,10 +5242,10 @@
   "resolved" "https://registry.npmjs.org/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz"
   "version" "1.0.4"
 
-"gsap@^3.11.0":
-  "integrity" "sha512-TV5aFGqXht+0o/CelnhCikSe3QGeG+q1XA/fyFFsMzesILHgWgFWIz0NuXIgcMaL5h7MG2l+j0BTupS5YyYkrw=="
-  "resolved" "https://registry.npmjs.org/gsap/-/gsap-3.11.0.tgz"
-  "version" "3.11.0"
+"gsap@^3.11.1":
+  "integrity" "sha512-UKuJ0UPhntFHMwT6URFQ4cTQv88xc7Kd9Dhxt7qX9IPhC+d+/a5wKW5E5Vn33hZ53nBI1JfApcEbzKgXkcuPZw=="
+  "resolved" "https://registry.npmjs.org/gsap/-/gsap-3.11.1.tgz"
+  "version" "3.11.1"
 
 "gzip-size@^6.0.0":
   "integrity" "sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q=="

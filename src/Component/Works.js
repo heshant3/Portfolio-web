@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect}from "react";
 import '../Css/WorksStyle.css';
 import Img1 from '../Image/works-1.png'
 import Img2 from '../Image/works-2.png'
@@ -13,15 +13,67 @@ import Img10 from '../Image/works-10.png'
 import Img11 from '../Image/works-11.png'
 import { IconContext } from "react-icons";
 import { FaBehanceSquare , FaGithub,  FaLinkedin} from 'react-icons/fa';
+import { gsap , Power3} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+
+
 
 export default function App() {
+
+
+    useEffect(() => {
+
+        gsap.from('.topword', { y:15, opacity:0, ease: Power3.easeOut, delay: 0.15 });
+
+        gsap.defaults({ease: "power3"});
+        gsap.set(".item", {y: 100});
+        
+        ScrollTrigger.batch(".item", {
+        //   interval: 0.1, // time window (in seconds) for batching to occur. 
+        //   batchMax: 4,   // maximum batch size (targets)
+          onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: {each: 0.15, grid: [1, 1]}, overwrite: true}),
+          onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
+          onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 100, overwrite: true})
+          // you can also define things like start, end, etc.
+        });
+        
+        ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".item", {y: 0}));
+
+
+        const exp = gsap.timeline({
+            // yes, we can add it to an entire timeline!
+            scrollTrigger: {
+              trigger: ".botttxt",
+             
+              start: "center 100%",
+              end: () => "+=" + exp.offsetWidth,
+              
+              scrub:1
+            }
+           
+          })
+          exp.from('.botttxt', { y:15, opacity:0, ease: Power3.easeOut, delay:0.8   }, );
+
+    
+    
+      }, [])
+
+
     return(
         <div className="worksmain">
+
+       <div className="topword">
 
         <h1>RECENT <br/> WORK</h1>
 
         <p>Projects that I've worked on</p>
-        
+        </div>  
+
+
         <div className="boxContent">
         <div className="item noisy"> 
         
