@@ -1,33 +1,52 @@
 import React, { useState, useEffect } from 'react';
 import {Switch,Route} from 'react-router-dom';
-import './Css/App.css';                                         
+import './Css/App.css'; 
+import Lottie from "react-lottie";
+import animationData from "./lotties/hand";                                        
 import Home from './Component/Home';
 import About from './Component/About';
 import Works from './Component/Works';
 import Error from './Component/Error';
 import List from './Component/List';
-import Footer from './Component/Footer';
 
 const App=()=>{
 
-  const App = () => {
-    const [loading, setLoading] = useState(false);
-    useEffect(() => {
-      setLoading(true);
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-    }, []);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    
+    setLoading(true);
+    setTimeout(() => {
+      
+      setLoading(false);
+    }, 2000);
+  }, []);
 
   return(
-    <div className='Appc'>
-
-{loading ? (
-        <div className="loader-container">
-      	  <div className="spinner"></div>
-        </div>
-      ) : (
-
+    <div >
+    {
+      loading ? (
+        <div className='app'>
+      <Lottie 
+	    options={defaultOptions}
+        height={200}
+        width={200}
+        isClickToPauseDisabled={true}
+        loading={loading}
+      />
+      </div >
+      )
+      :   (
+    <>
     <List/>
    <Switch>
     <Route exact path="/" component={Home}/>
@@ -36,8 +55,11 @@ const App=()=>{
     <Route component={Error}/>
    </Switch>
 
- )}
-    </div>
+
+    </>
+      )
+}
+</div>
   )
 }
 export default App;

@@ -39,7 +39,7 @@ export default function About(){
           }
          
         })
-        exp.from('.exp', {  y:15, opacity:0, ease: Power3.easeOut, delay:0.8   }, );
+        exp.from('.exp', {  y:15, opacity:0, ease: Power3.easeOut, delay:5   }, );
     
 
         const ach = gsap.timeline({
@@ -53,7 +53,7 @@ export default function About(){
           }
          
         })
-        ach.from('.achiev h1', {  y:15, opacity:0, ease: Power3.easeOut, delay:0.8  }, );
+        ach.from('.achiev h1', {  y:15, opacity:0, ease: Power3.easeOut, delay:5 }, );
 
 
         ScrollTrigger.batch(".effect-lily", {
@@ -80,7 +80,7 @@ export default function About(){
           }
          
         })
-        bb.from('.bot', {  y:15, opacity:0, ease: Power3.easeOut, delay:0.8   }, );
+        bb.from('.bot', {  y:35, opacity:0, ease: Power3.easeOut, delay:5   }, );
 
 
 

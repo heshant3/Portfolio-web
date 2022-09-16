@@ -45,6 +45,8 @@ background-color: var(--maincolor);
 
 
 
+
+
 .listItem{
 
     text-align: center;
@@ -118,7 +120,7 @@ background-color: var(--maincolor);
         background :#B1845E;
         color :#fff;
         box-shadow :0px 2px 5px rgba(102, 102, 102, 0.09);
-        border-radius :0px 40px 0px 40px;
+        border-radius :5px 40px 5px 40px;
         bottom: 30px;
     
     }

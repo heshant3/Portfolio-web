@@ -1,9 +1,20 @@
-import React from "react";
+import React , {useEffect} from "react";
 import Lottie from "react-lottie";
-import animationData from "../lotties/rocket";
+import animationData from "../lotties/404error";
+import '../Css/ErrorStyle.css';
+import { gsap , Power3} from "gsap";
 
 
 export default function App() {
+
+  useEffect(() => {
+    gsap.from('.Appp', { y:15, opacity:0, ease: Power3.easeOut, delay:0.8 });
+
+
+  }, [])
+
+
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -14,9 +25,9 @@ export default function App() {
   };
 
   return (
-    <div className="App">
+    <div className="Appp">
      
-      <Lottie options={defaultOptions} height={400} width={400} />
+      <Lottie options={defaultOptions} height={300} width={300} isClickToPauseDisabled={true} />
     </div>
   );
 }

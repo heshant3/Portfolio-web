@@ -113,7 +113,7 @@ export default function App() {
         <h1>Class Attended System</h1>
 
         <p>Fingerprint attendance tracker and mobile app.</p>
-        <h5>Technologies - Arduino, React, PHP, JS, jQuery </h5>
+        <h5>Technologies - Arduino, PHP, JS, jQuery, MySQL </h5>
         </div>
 
         <div className="item noisy"> 
@@ -121,7 +121,7 @@ export default function App() {
         <h1>Mini Bank Management System</h1>
 
         <p>Develop of Mini bank management system.</p>
-        <h5>Technologies - Arduino, Android, MySQL</h5>
+        <h5>Technologies - Arduino, VB, MySQL</h5>
         </div>
 
         <div className="item noisy"> 

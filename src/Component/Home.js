@@ -2,8 +2,6 @@
 import React , {Suspense , useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import '../Css/HomeAbout.css';
-import Lottie from "react-lottie";
-import animationData from "../lotties/parachute-2";
 import { gsap , Power3} from 'gsap';
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera,ContactShadows } from "@react-three/drei";
@@ -16,14 +14,6 @@ import Img from '../Image/img.png'
   export default function Home(){
 
   
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice"
-        },
-      };
 
       useEffect(() => {
 
