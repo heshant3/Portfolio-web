@@ -14,6 +14,7 @@ import Img11 from '../Image/works-11.png'
 import { IconContext } from "react-icons";
 import { FaBehanceSquare , FaGithub,  FaLinkedin} from 'react-icons/fa';
 import { gsap , Power3} from "gsap";
+import {Helmet} from "react-helmet";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,6 +45,7 @@ export default function App() {
         ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".item", {y: 0}));
 
 
+        
         const exp = gsap.timeline({
             // yes, we can add it to an entire timeline!
             scrollTrigger: {
@@ -65,6 +67,18 @@ export default function App() {
 
     return(
         <div className="worksmain">
+
+            <Helmet>
+               
+                <meta
+                 name="description"
+                 content="Ui/Ux Engineer Works page"
+                />
+                <meta
+                 name="keywords"
+                 content="Heshan Tharindu kalubowila, ui designer, Ui developer, Frond-end developer, uiux, Ui/Ux designer, Heshan, tharindu, kalubowila"
+                />
+            </Helmet>
 
        <div className="topword">
 

@@ -9,6 +9,8 @@ import Works from './Component/Works';
 import Error from './Component/Error';
 import List from './Component/List';
 import ScrollToTop from './Component/ScrollToTop';
+import {Helmet} from "react-helmet";
+
 
 const App=()=>{
 
@@ -48,6 +50,21 @@ const App=()=>{
       )
       :   (
     <>
+
+
+            <Helmet>
+                
+                
+                <meta
+                 name="description"
+                 content="Ui/Ux Engineer"
+                />
+                <meta
+                 name="keywords"
+                 content="Heshan Tharindu kalubowila, ui designer, Ui developer, Frond-end developer, uiux, Ui/Ux designer, Heshan, tharindu, kalubowila"
+                />
+            </Helmet>
+
         <ScrollToTop/>
     <List/>
    <Switch>

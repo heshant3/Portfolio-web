@@ -11,6 +11,7 @@ import Img5 from '../Image/About-5.png'
 import { gsap , Power3} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ReactGa from 'react-ga';
+import {Helmet} from "react-helmet";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,7 +39,7 @@ export default function About(){
           scrollTrigger: {
             trigger: ".exp",
             
-            start:'5% 100% ',
+            start:'10% 100% ',
             end: () => "+=" + exp.offsetWidth,
             
             scrub:1
@@ -53,7 +54,7 @@ export default function About(){
           scrollTrigger: {
             trigger: ".achiev h1",
   
-            start:'5% 100% ',
+            start:'10% 100% ',
             end: () => "+=" + ach.offsetWidth,
             scrub:1
           }
@@ -101,6 +102,18 @@ export default function About(){
     return(
         <div className="mainAbout"> 
 
+            <Helmet>
+                
+                <meta
+                 name="description"
+                 content="Ui/Ux Engineer about page"
+                />
+                <meta
+                 name="keywords"
+                 content="Heshan Tharindu kalubowila, ui designer, Ui developer, Frond-end developer, uiux, Ui/Ux designer, Heshan, tharindu, kalubowila"
+                />
+            </Helmet>
+
         {/* ////////////  About    /////////////////// */}
         <div  className="About_1">
             <div className="img">
@@ -108,7 +121,7 @@ export default function About(){
             </div>
             <h2>Hello there , <br/> I'm Heshan Tharindu</h2>
             <div className="lineSP"></div>
-            <p>I am undergraduate from Information and Communication Technology in Rajarata University of Sri Lanka.I have over 3 Years of experience in UI Engineering. <br/>  <br/> 
+            <p>I am undergraduate from Information and Communication Technology in Rajarata University of Sri Lanka. I have over 3 Years of experience in UI Engineering. <br/>  <br/> 
             I am interested in Ui\Ux developer. Learning new things in information technology is my main goal and I achieve it with hard work.</p>
             </div>   
         {/* ////////////  Working Experience    /////////////////// */}

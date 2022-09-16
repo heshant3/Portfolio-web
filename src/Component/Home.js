@@ -8,7 +8,7 @@ import { OrbitControls, PerspectiveCamera,ContactShadows } from "@react-three/dr
 import Kick from "../Plane.js";
 import { CameraHelper } from "three";
 import Img from '../Image/img.png'
-
+import {Helmet} from "react-helmet";
 
 
   export default function Home(){
@@ -29,6 +29,18 @@ import Img from '../Image/img.png'
     
     return(
         <div >
+
+            <Helmet>
+                
+                <meta
+                 name="description"
+                 content="Ui/Ux Engineer"
+                />
+                <meta
+                 name="keywords"
+                 content="Heshan Tharindu kalubowila, ui designer, Ui developer, Frond-end developer, uiux, Ui/Ux designer, Heshan, tharindu, kalubowila"
+                />
+            </Helmet>
          
          <div className="mainbody">
 
