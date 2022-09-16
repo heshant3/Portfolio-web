@@ -8,6 +8,7 @@ import About from './Component/About';
 import Works from './Component/Works';
 import Error from './Component/Error';
 import List from './Component/List';
+import ScrollToTop from './Component/ScrollToTop';
 
 const App=()=>{
 
@@ -28,7 +29,7 @@ const App=()=>{
     setTimeout(() => {
       
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
 
   return(
@@ -47,8 +48,10 @@ const App=()=>{
       )
       :   (
     <>
+        <ScrollToTop/>
     <List/>
    <Switch>
+
     <Route exact path="/" component={Home}/>
     <Route path="/works" component={Works}/>
     <Route path="/about" component={About}/>

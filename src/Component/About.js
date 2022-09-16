@@ -10,6 +10,7 @@ import Img4 from '../Image/About-4.png'
 import Img5 from '../Image/About-5.png'
 import { gsap , Power3} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ReactGa from 'react-ga';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,6 +24,11 @@ export default function About(){
   
     
       useEffect(() => {
+
+       ReactGa.initialize('UA-241418456-1')
+
+       ReactGa.pageview('/')
+
         gsap.from('.About_1', { y:15, opacity:0, ease: Power3.easeOut, delay:0.8 });
 
         // gsap.to('.mainAbout', { opacity:1, duration: 2.5, ease: "power4.out", y: 30 }, );
@@ -48,7 +54,7 @@ export default function About(){
             trigger: ".achiev h1",
   
             start:'5% 100% ',
-            end: () => "+=" + exp.offsetWidth,
+            end: () => "+=" + ach.offsetWidth,
             scrub:1
           }
          
@@ -102,7 +108,7 @@ export default function About(){
             </div>
             <h2>Hello there , <br/> I'm Heshan Tharindu</h2>
             <div className="lineSP"></div>
-            <p>I am undergraduate from Information and Communication Technology in Rajarata University of Sri Lanka.i have over 3 Years of experience in UI Engineering. <br/>  <br/> 
+            <p>I am undergraduate from Information and Communication Technology in Rajarata University of Sri Lanka.I have over 3 Years of experience in UI Engineering. <br/>  <br/> 
             I am interested in Ui\Ux developer. Learning new things in information technology is my main goal and I achieve it with hard work.</p>
             </div>   
         {/* ////////////  Working Experience    /////////////////// */}
@@ -116,7 +122,7 @@ export default function About(){
 
             <h3>PeoplePerhour - <span>3D Modeling and Ui Designer / 2020 - Present</span> </h3>
 
-            <h3>Like Mart - <span>Founder / Embedded System Developer 2017 - Present</span> </h3>
+            <h3>Like Mart - <span>Frond-End Developer / Embedded System Developer 2017 - 2020</span> </h3>
             </div>
 
         {/* ////////////  Achievements    /////////////////// */}

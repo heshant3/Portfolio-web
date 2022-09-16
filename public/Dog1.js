@@ -14,9 +14,6 @@ export function Model(props) {
       <group name="Scene">
         <group name="skeleton_#0_2">
           <primitive object={nodes.Root} />
-          <group name="Geometry">
-            <group name="Rover_Props" />
-          </group>
           <skinnedMesh name="Rover" geometry={nodes.Rover.geometry} material={materials.Material_0} skeleton={nodes.Rover.skeleton} />
         </group>
       </group>
