@@ -106,7 +106,7 @@ export default function About(){
                 
                 <meta
                  name="description"
-                 content="Ui/Ux Engineer about page"
+                 content="UI/UX Engineer about page"
                 />
                 <meta
                  name="keywords"
@@ -122,7 +122,7 @@ export default function About(){
             <h2>Hello there , <br/> I'm Heshan Tharindu</h2>
             <div className="lineSP"></div>
             <p>I am undergraduate from Information and Communication Technology in Rajarata University of Sri Lanka. I have over 3 Years of experience in UI Engineering. <br/>  <br/> 
-            I am interested in Ui\Ux developer. Learning new things in information technology is my main goal and I achieve it with hard work.</p>
+            I am interested in UI\UX developer. Learning new things in information technology is my main goal and I achieve it with hard work.</p>
             </div>   
         {/* ////////////  Working Experience    /////////////////// */}
                     

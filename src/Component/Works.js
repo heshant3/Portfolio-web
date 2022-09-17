@@ -12,7 +12,7 @@ import Img9 from '../Image/works-9.png'
 import Img10 from '../Image/works-10.png'
 import Img11 from '../Image/works-11.png'
 import { IconContext } from "react-icons";
-import { FaBehanceSquare , FaGithub,  FaLinkedin} from 'react-icons/fa';
+import { FaBehanceSquare , FaGithub,  FaCodepen} from 'react-icons/fa';
 import { gsap , Power3} from "gsap";
 import {Helmet} from "react-helmet";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -185,6 +185,7 @@ export default function App() {
             <IconContext.Provider value={{ className: "global-class-name" }}>
             <a href="https://github.com/heshant3" > < FaGithub /> </a>
             <a href="https://www.behance.net/heshantharindu" > <FaBehanceSquare  /> </a>
+            <a href="https://codepen.io/heshant3" > <FaCodepen  /> </a>
             </IconContext.Provider>
         </div>
 

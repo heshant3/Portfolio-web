@@ -34,7 +34,7 @@ import {Helmet} from "react-helmet";
                 
                 <meta
                  name="description"
-                 content="Ui/Ux Engineer"
+                 content="UI/UX Engineer"
                 />
                 <meta
                  name="keywords"
@@ -47,7 +47,7 @@ import {Helmet} from "react-helmet";
           <div className="bodybox">
             <div className="iteambox">
              
-              <h1>Hi There, <br/>  <spam> I'm</spam>  <span>Ui/Ux</span> <span>Engineer</span> 
+              <h1>Hi There, <br/>  <spam> I'm</spam>  <span>UI/UX</span> <span>Engineer</span> 
               <br/> <p>A Creative Designer from SriLanka</p>
               </h1>
             </div>
