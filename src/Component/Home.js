@@ -48,7 +48,7 @@ import {Helmet} from "react-helmet";
             <div className="iteambox">
              
               <h1>Hi There, <br/>  <spam> I'm</spam>  <span>UI/UX</span> <span>Engineer</span> 
-              <br/> <p>A Creative Designer from SriLanka</p>
+              <br/> <p>A Creative Designer from Sri Lanka</p>
               </h1>
             </div>
             <div className="iteambox">
