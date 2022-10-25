@@ -1,86 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 
+header {
+  background-color: var(--maincolor);
 
-
-
-
-
-
-header{
-background-color: var(--maincolor);
-
-/* .container-flex{
+  /* .container-flex{
     width: 95px;
     margin:0 auto;
     max-width: 1200px;
 } */
 }
 
-
-.toop{
-   position: relative;
-   width: 100%;
+.toop {
+  position: relative;
+  width: 100%;
 }
 
-.list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    z-index: 3;
-    position: fixed;
-    width: 50%;
-    left: 50%;
-    transform: translateX(-50%);  
-    padding-top: 1rem;
-    margin-top: 1rem;
-    width :80vh;
-    height: 3.2rem;
-    background :#FFFFFF;
-    color :#fff;
-    box-shadow :0px 2px 5px rgba(102, 102, 102, 0.09);
-    border-radius :30px;
-
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  z-index: 3;
+  position: fixed;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  width: 80vh;
+  height: 3.2rem;
+  background: #ffffff;
+  color: #fff;
+  box-shadow: 0px 2px 5px rgba(102, 102, 102, 0.09);
+  border-radius: 30px;
 }
 
-
-
-
-
-.listItem{
-
-    text-align: center;
-    color: rgb(0, 0, 0);
-    text-decoration:none;
-    font-size: 1rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    margin: 0 60px;
-    transition: transform .2s;
-
+.listItem {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: transform 0.2s;
 }
 
-.activeItem{
-
-    transform:scale(1.1);
-    text-decoration:underline;
-    color: #B1845E;
-}
-.activeItem::before{
-    transform: scale(2);
+.activeItem {
+  color: #b1845e;
 }
 
-.activeItem::after{
-    transform: scale(1.5);
+.listItem:hover {
+  color: #b1845e;
 }
 
-
-
-
-.listItem:hover{
-    color: #B1845E;
+.listItem::after {
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #b1845e;
+  transition: width 0.3;
 }
 
+.listItem:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
 
 /* @media screen and (max-width: 1100px){
 
@@ -102,52 +88,40 @@ background-color: var(--maincolor);
 }
 */
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 3;
+    position: fixed;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 1rem;
+    margin-top: 1rem;
+    width: 40vh;
+    height: 3.2rem;
+    background: #b1845e;
+    color: #fff;
+    box-shadow: 0px 2px 5px rgba(102, 102, 102, 0.09);
+    border-radius: 5px 40px 5px 40px;
+    bottom: 30px;
+  }
 
-    .list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        z-index: 3;
-        position: fixed;
-        width: 50%;
-        left: 50%;
-        transform: translateX(-50%);  
-        padding-top: 1rem;
-        margin-top: 1rem;
-        width :40vh;
-        height: 3.2rem;
-        background :#B1845E;
-        color :#fff;
-        box-shadow :0px 2px 5px rgba(102, 102, 102, 0.09);
-        border-radius :5px 40px 5px 40px;
-        bottom: 30px;
-    
-    }
+  .listItem {
+    color: #ffffff;
+    text-align: center;
+    margin: 0 10px;
+    transition: transform 0.2s;
+  }
 
-    .listItem{
-        color: #FFFFFF;
-        text-align: center;
-        margin: 0 10px;
-        transition: transform .2s;
-    
-    }
+  .activeItem {
+    text-decoration: underline;
+    color: #ffffff;
+  }
 
-    .listItem:hover{
-        color: #FEFEFE;
-    }
-
-    .activeItem{
-
-        color: #FEFEFE;
-    }
-
+  .listItem:hover {
+    color: #eceadd;
+  }
 }
-    
-
-   
-    
-
-
-
-
